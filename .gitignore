@@ -9,8 +9,8 @@ __pycache__/
 # Data & outputs
 *.csv
 *.json
-!data/raw/*.csv
-!data/raw/*.json
+!data/raw/smogon/*.csv
+!data/raw/smogon/*.json
 !data/processed/*.json
 *.log
 *.h5
