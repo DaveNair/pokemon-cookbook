@@ -40,6 +40,8 @@ STAT_NAME = {
 }
 STAT_ABBR = {v:k for k,v in STAT_NAME.items()}
 
+DEFAULT_STAT_ORDER = ['hp','atk','def','spa','spd','spe']
+
 CATEGORY_ABBR = {
     "Physical": "Phys",
     "Special": "Spec",
