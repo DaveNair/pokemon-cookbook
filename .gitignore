@@ -9,6 +9,7 @@ __pycache__/
 # Data & outputs
 *.csv
 *.json
+!processed/*.json
 *.log
 *.h5
 *.pkl
