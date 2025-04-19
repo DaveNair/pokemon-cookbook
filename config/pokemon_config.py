@@ -21,6 +21,15 @@ TYPE_COLORS = {
     "Fairy": "#D685AD",
 }
 
+STATUS_COLORS = {
+    "PAR": "#FFD700",  # Yellow
+    "BRN": "#A52A2A",  # Brown
+    "FRZ": "#00BFFF",  # Light blue
+    "SLP": "#9370DB",  # Purple
+    "PSN": "#8B008B",  # Dark magenta
+    "TOX": "#4B0082",  # Indigo
+}
+
 DEFAULT_TYPE_ORDER = [
     "Normal", "Fighting", "Flying",
     "Poison", "Ground", "Rock",
