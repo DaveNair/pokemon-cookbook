@@ -937,7 +937,7 @@
 		"color": "Purple",
 		"evos": ["Nidorino"],
 		"eggGroups": ["Monster", "Field"],
-		"mother": 'nidoranf'
+		"mother": "nidoranf"
 	},
 	"nidorino": {
 		"num": "33",
@@ -5824,7 +5824,7 @@
 		"weightkg": 17.7,
 		"color": "Gray",
 		"eggGroups": ["Bug", "Human-Like"],
-		"mother": 'illumise'
+		"mother": "illumise"
 	},
 	"illumise": {
 		"num": "314",
@@ -15917,7 +15917,7 @@
 		"eggGroups": ["Fairy"],
 		"otherFormes": ["Indeedee-F"],
 		"formeOrder": ["Indeedee", "Indeedee-F"],
-		"mother": 'indeedeef'
+		"mother": "indeedeef"
 	},
 	"indeedeef": {
 		"num": "876",
