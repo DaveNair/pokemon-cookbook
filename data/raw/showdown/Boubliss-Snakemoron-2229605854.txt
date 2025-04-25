@@ -1,0 +1,300 @@
+☆Boubliss and ☆Snakemoron joined
+Format:
+[Gen 9] Random Battle
+Rated battle
+Species Clause: Limit one of each Pokémon
+HP Percentage Mod: HP is shown in percentages
+Sleep Clause Mod: Limit one foe put to sleep
+Illusion Level Mod: Illusion disguises the Pokémon's true level
+
+Battle started between Boubliss and Snakemoron!
+
+Boubliss sent out Iron Boulder!
+
+Go! Politoed!
+[Politoed's Drizzle]
+It started to rain!
+
+Turn 1
+
+Boubliss withdrew Iron Boulder!
+Boubliss sent out Persian!
+
+Politoed used Hypnosis!
+The opposing Persian avoided the attack!
+
+(Rain continues to fall.)
+
+Turn 2
+Battle timer is ON: inactive players will automatically lose when time's up. (requested by Boubliss)
+
+The opposing Persian used Switcheroo!
+The opposing Persian switched items with its target!
+Politoed obtained one Choice Band.
+The opposing Persian obtained one Leftovers.
+
+Politoed used Hydro Pump!
+(The opposing Persian lost 74.0% of its health!)
+
+(Rain continues to fall.)
+The opposing Persian restored a little HP using its Leftovers!
+
+Turn 3
+
+The opposing Persian used Double-Edge!
+(Politoed lost 39.7% of its health!)
+The opposing Persian was damaged by the recoil!
+
+Politoed used Hydro Pump!
+The opposing Persian avoided the attack!
+
+(Rain continues to fall.)
+The opposing Persian restored a little HP using its Leftovers!
+
+Turn 4
+
+The opposing Persian used Knock Off!
+(Politoed lost 22.5% of its health!)
+The opposing Persian knocked off Politoed's Choice Band!
+
+Politoed used Hydro Pump!
+(The opposing Persian lost 23.0% of its health!)
+
+The opposing Persian fainted!
+
+(Rain continues to fall.)
+
+Boubliss sent out Mismagius!
+
+Turn 5
+
+The opposing Mismagius used Thunderbolt!
+It's super effective!
+(Politoed lost 37.7% of its health!)
+
+Politoed fainted!
+
+The rain stopped.
+Snakemoron has 120 seconds left.
+
+Go! Smeargle!
+
+Turn 6
+
+The opposing Mismagius used Thunderbolt!
+(Smeargle lost 58.1% of its health!)
+
+Smeargle used Spore!
+The opposing Mismagius fell asleep!
+
+Turn 7
+
+Boubliss withdrew Mismagius!
+Boubliss sent out Barraskewda!
+
+Smeargle used Sticky Web!
+A sticky web has been laid out on the ground around the opposing team!
+
+Turn 8
+
+Smeargle, come back!
+Go! Dewgong!
+
+The opposing Barraskewda used Waterfall!
+It's not very effective...
+(Dewgong lost 23.3% of its health!)
+
+Turn 9
+
+Boubliss withdrew Barraskewda!
+Boubliss sent out Noctowl!
+
+Dewgong used Surf!
+(The opposing Noctowl lost 23.5% of its health!)
+
+Turn 10
+
+The opposing Noctowl used Defog!
+Dewgong's evasiveness fell!
+The sticky web has disappeared from the ground around the opposing team!
+
+Dewgong used Triple Axel!
+It's super effective!
+(The opposing Noctowl lost 15.7% of its health!)
+It's super effective!
+(The opposing Noctowl lost 30.2% of its health!)
+It's super effective!
+(The opposing Noctowl lost 30.5% of its health!)
+
+The opposing Noctowl fainted!
+The Pokémon was hit 3 times!
+
+Boubliss sent out Iron Boulder!
+
+Turn 11
+
+The opposing Iron Boulder used Swords Dance!
+The opposing Iron Boulder's Attack rose sharply!
+
+Dewgong used Surf!
+It's super effective!
+(The opposing Iron Boulder lost 70.9% of its health!)
+
+Turn 12
+
+The opposing Iron Boulder used Mighty Cleave!
+It's super effective!
+(Dewgong lost 76.7% of its health!)
+
+Dewgong fainted!
+The opposing Iron Boulder lost some of its HP!
+
+Go! Rayquaza!
+[Rayquaza's Air Lock]
+The effects of the weather disappeared.
+
+Turn 13
+
+Rayquaza used Extreme Speed!
+It's not very effective...
+(The opposing Iron Boulder lost 19.2% of its health!)
+
+The opposing Iron Boulder fainted!
+
+Boubliss sent out Iron Hands!
+
+Turn 14
+
+Rayquaza, come back!
+Go! Smeargle!
+
+The opposing Iron Hands used Swords Dance!
+The opposing Iron Hands's Attack rose sharply!
+
+Turn 15
+
+Smeargle used Sticky Web!
+A sticky web has been laid out on the ground around the opposing team!
+
+The opposing Iron Hands used Ice Punch!
+(Smeargle lost 41.9% of its health!)
+
+Smeargle fainted!
+
+Go! Okidogi!
+
+Turn 16
+
+Okidogi used Bulk Up!
+Okidogi's Attack rose!
+Okidogi's Defense rose!
+
+The opposing Iron Hands used Thunder Punch!
+(Okidogi lost 44.7% of its health!)
+
+Okidogi restored a little HP using its Leftovers!
+
+Turn 17
+
+Boubliss withdrew Iron Hands!
+Boubliss sent out Barraskewda!
+The opposing Barraskewda was caught in a sticky web!
+The opposing Barraskewda's Speed fell!
+
+Okidogi used Bulk Up!
+Okidogi's Attack rose!
+Okidogi's Defense rose!
+
+Okidogi restored a little HP using its Leftovers!
+
+Turn 18
+
+The opposing Barraskewda used Psychic Fangs!
+It's super effective!
+(Okidogi lost 67.6% of its health!)
+
+Okidogi fainted!
+
+Go! Minior!
+[Minior's Shields Down]
+Shields Down deactivated!
+(Minior shielded itself.)
+
+Turn 19
+
+Boubliss withdrew Barraskewda!
+Boubliss sent out Iron Hands!
+The opposing Iron Hands was caught in a sticky web!
+The opposing Iron Hands's Speed fell!
+
+Minior used Shell Smash!
+Minior's Defense fell!
+Minior's Sp. Def fell!
+Minior's Attack rose sharply!
+Minior's Sp. Atk rose sharply!
+Minior's Speed rose sharply!
+Minior returned its stats to normal using its White Herb!
+
+Turn 20
+
+Minior has Terastallized into the Ground-type!
+
+Minior used Earthquake!
+It's super effective!
+(The opposing Iron Hands lost 64.3% of its health!)
+
+The opposing Iron Hands used Thunder Punch!
+It doesn't affect Minior...
+
+The opposing Iron Hands restored a little HP using its Leftovers!
+
+Turn 21
+
+The opposing Iron Hands has Terastallized into the Fighting-type!
+
+Minior used Earthquake!
+(The opposing Iron Hands lost 34.9% of its health!)
+
+The opposing Iron Hands used Ice Punch!
+It's super effective!
+(Minior lost 50.9% of its health!)
+
+The opposing Iron Hands restored a little HP using its Leftovers!
+[Minior's Shields Down]
+Shields Down activated!
+(Minior stopped shielding itself.)
+
+Turn 22
+
+Minior used Acrobatics!
+It's super effective!
+(The opposing Iron Hands lost 13.1% of its health!)
+
+The opposing Iron Hands fainted!
+
+Boubliss sent out Mismagius!
+
+Turn 23
+
+Minior used Acrobatics!
+(The opposing Mismagius lost 100% of its health!)
+
+The opposing Mismagius fainted!
+
+Boubliss sent out Barraskewda!
+The opposing Barraskewda was caught in a sticky web!
+The opposing Barraskewda's Speed fell!
+
+Turn 24
+
+Minior used Acrobatics!
+(The opposing Barraskewda lost 100% of its health!)
+
+The opposing Barraskewda fainted!
+
+Snakemoron won the battle!
+Boubliss's rating: 1423 → 1402
+(-21 for losing)
+Snakemoron's rating: 1410 → 1431
+(+21 for winning)
+☆Boubliss left
