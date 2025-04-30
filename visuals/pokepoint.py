@@ -75,7 +75,8 @@ class Pokepoint:
             leftover_hpp -= self.total_status_dmg
             post_status_r = np.sqrt(leftover_hpp) * base_r
             ## apply "ring" - which is a low-alpha circle, with high-alpha circles inside
-            status_dmg_ring = Circle((x, y), radius=base_r, facecolor=STATUS_COLORS[self.status], alpha=0.6, edgecolor='none', zorder=3)
+            stat_ring_color = STATUS_COLORS[self.status]
+            status_dmg_ring = Circle((x, y), radius=base_r, facecolor=stat_ring_color, alpha=0.6, edgecolor=stat_ring_color, zorder=3)
             ax.add_patch(status_dmg_ring)
 
         # --- (technically adding a layer in below logic)
