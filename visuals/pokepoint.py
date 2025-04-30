@@ -8,7 +8,7 @@ import sys
 REPO_PATH = Path(__file__).resolve().parent.parent
 sys.path.append(str(REPO_PATH))
 
-from config.pokemon_config import TYPE_COLORS, STATUS_COLORS
+from config.pokemon_config import TYPE_COLORS, STATUS_COLORS, STATUS_DMG
 
 class Pokepoint:
     def __init__(self, types, size=1.0, hp_pct=1.0, status=None):
@@ -25,20 +25,10 @@ class Pokepoint:
     def reset_status(self):
         self.status = None
 
-    def add_burn_dmg(self):
-        current_burn_dmg = None
-        self.decrease_hp(current_burn_dmg)
-        self.total_status_dmg += current_burn_dmg
-
-    def add_poison_dmg(self):
-        current_psn_dmg = None
-        self.decrease_hp(current_psn_dmg)
-        self.total_status_dmg += current_psn_dmg
-
-    def add_toxic_dmg(self, toxic_turn):
-        current_toxic_dmg = toxic_turn / 16.0
-        self.decrease_hp(current_toxic_dmg)
-        self.total_status_dmg += current_toxic_dmg
+    def add_status_dmg(self, toxic_turn=1):
+        current_dmg = STATUS_DMG.get(self.status, 0) * toxic_turn
+        self.decrease_hp(current_dmg)
+        self.total_status_dmg += current_dmg
 
     def set_health(self, hp_pct):
         self.hp_pct = max(0, min(hp_pct, 1.0))

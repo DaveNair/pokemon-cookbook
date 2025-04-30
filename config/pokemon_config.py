@@ -30,6 +30,8 @@ STATUS_COLORS = {
     "TOX": "#4B0082",  # Indigo
 }
 
+STATUS_DMG = {"BRN":1/16.0, "PSN":1/8.0, "TOX":1/16.0}
+
 DEFAULT_TYPE_ORDER = [
     "Normal", "Fighting", "Flying",
     "Poison", "Ground", "Rock",
