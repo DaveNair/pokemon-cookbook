@@ -60,6 +60,7 @@ class Pokepoint:
 
     def draw(self, ax, x, y):
         base_r = 0.5 * self.size
+        leftover_hpp = self.hp_pct
 
         # --- Draw status ring if needed ---
         if self.status in STATUS_COLORS:
@@ -81,7 +82,7 @@ class Pokepoint:
         # --- ADDING LAYER: Status DAMAGE
         if self.status and self.total_status_dmg>0:
             ## figure out the new leftover amt
-            leftover_hpp = 1 - self.total_status_dmg
+            leftover_hpp -= self.total_status_dmg
             post_status_r = np.sqrt(leftover_hpp) * base_r
             ## apply "ring" - which is a low-alpha circle, with high-alpha circles inside
             status_dmg_ring = Circle((x, y), radius=base_r, facecolor=STATUS_COLORS[self.status], alpha=0.6, edgecolor='none', zorder=3)
