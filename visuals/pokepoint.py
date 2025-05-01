@@ -12,7 +12,10 @@ sys.path.append(str(REPO_PATH))
 from config.pokemon_config import TYPE_COLORS, STATUS_COLORS, STATUS_DMG
 
 VERBOSE = True
-_DEFAULT_RING_WIDTH = 0.1
+CONFIG_PLOT_LASTLINE = False
+_DEFAULT_RING_WIDTH = 0.075
+_THIN_LINE_WIDTH = 0.5
+_THICK_LINE_WIDTH = 1
 
 def get_hpp_color(hpp_value):
     if hpp_value <= 0.25:
@@ -92,7 +95,7 @@ class Pokepoint:
             ring = Circle((x, y), 
                 radius=radius_stat_ring, 
                 facecolor=STATUS_COLORS[self.status],
-                edgecolor='none', 
+                edgecolor='none', linewidth=0, 
                 zorder=1)
             ax.add_patch(ring)
             notify(f"Added status ring: {self.status}")
@@ -104,7 +107,7 @@ class Pokepoint:
             wedge = Wedge(center=(x, y), 
                 r=self.radius, theta1=theta1, theta2=theta2,
                 facecolor=color, 
-                edgecolor='none', linewidth=0.5, 
+                edgecolor='none', linewidth=0, 
                 zorder=2)
             ax.add_patch(wedge)
             notify(f"Added Pokepoint wedge: {self.types}@[{theta1},{theta2}] = {color}")
@@ -122,8 +125,8 @@ class Pokepoint:
             status_dmg_ring = Circle((x, y), 
                 radius=self.radius, 
                 facecolor=stat_ring_color, 
-                alpha=0.4, 
-                edgecolor=stat_ring_color, 
+                alpha=0.5, 
+                edgecolor=stat_ring_color, linestyle='dashed', linewidth=_THIN_LINE_WIDTH,
                 zorder=3)
             ax.add_patch(status_dmg_ring)
             notify(f"Added status dmg: {self.status}: {self.radius} -> {radius_between_atk_stat}")
@@ -138,33 +141,41 @@ class Pokepoint:
                 radius=radius_between_atk_stat, 
                 facecolor='#888888', 
                 alpha=0.8, 
-                edgecolor=stat_ring_color, 
+                edgecolor=stat_ring_color, linestyle='dashed', linewidth=_THIN_LINE_WIDTH, 
                 zorder=4)
             ax.add_patch(attack_dmg_ring)
             notify(f"Added attack dmg: {radius_between_atk_stat} -> {inner_r} <<< SOMETHING IS WRONG HERE!!")
             notify(f"Added attack dmg: {radius_between_atk_stat} -> {radius_for_inner} <<< ???")
+
         ## finally, we can draw the health circle (inner circle), using the same 4-quad technique!
         for i, (theta1, theta2) in enumerate(angles):
             color = TYPE_COLORS.get(self.types[i % 2], "#888888")
             wedge = Wedge(center=(x, y), 
                 r=radius_for_inner, theta1=theta1, theta2=theta2, 
                 facecolor=color, alpha=1,
-                # edgecolor='black', 
-                edgecolor=get_hpp_color(self.hp_pct), 
-                # edgecolor='none', 
-                linewidth=0.1, 
+                edgecolor='none', linewidth=0,
                 zorder=5)
             ax.add_patch(wedge)
             notify(f"Added Center Pokepoint wedge: {self.types}@[{theta1},{theta2}] = {color} @ r={radius_for_inner}")
 
+        ## we'll wrap these wedges with an inner circle
+        inner_line = Circle((x, y), 
+            radius=radius_for_inner, 
+            facecolor='none', 
+            edgecolor=get_hpp_color(self.hp_pct), linewidth=_THICK_LINE_WIDTH, 
+            zorder=6)
+        ax.add_patch(inner_line)
+
         ## lastly, we can plot the last hpp
-        if self.hpp_last:
+        if self.hpp_last and CONFIG_PLOT_LASTLINE:
             radius_for_last = self.convert_to_radius(self.hpp_last)
             last_hpp_color = get_hpp_color(self.hpp_last)
             last_line = Circle((x, y), 
                 radius=radius_for_last, 
                 facecolor='none', 
-                edgecolor=last_hpp_color, linestyle='dashed', zorder=6)
+                # edgecolor=last_hpp_color, 
+                edgecolor='#888888', linestyle='dashed', linewidth=_THIN_LINE_WIDTH,
+                zorder=6)
             ax.add_patch(last_line)
 
 
