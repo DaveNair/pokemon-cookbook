@@ -81,14 +81,12 @@ class Pokepoint:
         return np.sqrt(hpp_value) * self.radius
 
     def draw(self, ax, x, y):
-        ## we can IMMEDIATELY calculate all of the layers' radii
-        ## self.radius
-        radius_stat_ring = self.radius + _DEFAULT_RING_WIDTH #* self.size
+        ## we can IMMEDIATELY calculate all of the layers' radii: 
+        #### (opt .status) radius_stat_ring, (main) self.radius, (after status dmg) non_status_dmg -> radius_between_atk_stat, (final health after atk) radius_for_inner
+        radius_stat_ring = self.radius + _DEFAULT_RING_WIDTH 
         non_status_dmg = 1 - self.total_status_dmg
         radius_between_atk_stat = self.convert_to_radius(non_status_dmg) 
         radius_for_inner = self.convert_to_radius(self.hp_pct)
-        # base_r = 0.5 * self.size
-        # leftover_hpp = self.hp_pct
 
         # --- Draw status ring if needed ---
         if self.status in STATUS_COLORS:
@@ -112,14 +110,8 @@ class Pokepoint:
             ax.add_patch(wedge)
             notify(f"Added Pokepoint wedge: {self.types}@[{theta1},{theta2}] = {color}")
 
-        ## using these vars: leftover_r & leftover_hpp? (for all these new dmg layers)
-        ## it is associated with leftover_hpp by the following relationship:    (leftover_r / base_r) == sqrt(leftover_hpp)
-
         # --- ADDING LAYER: Status DAMAGE
         if self.status and self.total_status_dmg>0:
-            ## figure out the new leftover amt
-#            leftover_hpp -= self.total_status_dmg
-#            radius_between_atk_stat = np.sqrt(leftover_hpp) * self.radius
             ## apply "ring" - which is a low-alpha circle, with high-alpha circles inside
             stat_ring_color = STATUS_COLORS[self.status]
             status_dmg_ring = Circle((x, y), 
@@ -131,10 +123,7 @@ class Pokepoint:
             ax.add_patch(status_dmg_ring)
             notify(f"Added status dmg: {self.status}: {self.radius} -> {radius_between_atk_stat}")
 
-        # --- (technically adding a layer in below logic)
-
         # --- Draw delta-hp SHRINKING circle (if not full health) ---
-        inner_r = np.sqrt(self.hp_pct) * self.radius
         if non_status_dmg!=self.hp_pct:
             damaged_hpp = non_status_dmg - self.hp_pct ## this is the grey portion, not actually used because we already have our final hpp
             attack_dmg_ring = Circle((x, y), 
@@ -144,7 +133,6 @@ class Pokepoint:
                 edgecolor=stat_ring_color, linestyle='dashed', linewidth=_THIN_LINE_WIDTH, 
                 zorder=4)
             ax.add_patch(attack_dmg_ring)
-            notify(f"Added attack dmg: {radius_between_atk_stat} -> {inner_r} <<< SOMETHING IS WRONG HERE!!")
             notify(f"Added attack dmg: {radius_between_atk_stat} -> {radius_for_inner} <<< ???")
 
         ## finally, we can draw the health circle (inner circle), using the same 4-quad technique!
