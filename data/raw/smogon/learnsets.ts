@@ -93614,6 +93614,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 		],
 		eventOnly: true,
 	},
+// END OF REG POKEMON; BEGINNING OF FAKEMON
 	syclar: {
 		learnset: {
 			absorb: ["9L1", "8L1", "7L1"],
